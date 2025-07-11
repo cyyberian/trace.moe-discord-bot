@@ -21,4 +21,4 @@ This discord bot uses the trace.moe api to identify scenes of animes from images
 - Run the bot using node index
 
 ## Credits
-- Made possible using trace.moe API and anilist API
+- Made possible using trace.moe API and anilist API, as well as Discord.js
