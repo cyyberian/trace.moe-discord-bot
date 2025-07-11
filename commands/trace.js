@@ -72,7 +72,6 @@ module.exports = {
 
 		const animeTitle = animeInfo.title?.romaji || animeInfo.title?.english || "Unknown title..";
 		const episode = result.episode;
-		const similarity = (result.similarity * 100).toFixed(2);
 
 		const timeFormat = (seconds) => {
 			const mins = Math.floor(seconds / 60);
@@ -87,8 +86,7 @@ module.exports = {
 			.setColor(0x48CAE4)
 			.setTitle(animeTitle)
 			.setURL(animeInfo.siteUrl)
-			.setDescription(`Episode: ${(episode)}\n Timestamp: ${startTime} - ${endTime}\nSimilarity: ${similarity}%`
-		)
+			.setDescription(`Episode: ${(episode)}\n Timestamp: ${startTime} - ${endTime}`)
 			.setImage(animeInfo.coverImage.large)
 			.setFooter({
 				text: "Created using trace.moe and anilist API"
